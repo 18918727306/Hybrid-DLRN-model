@@ -16,11 +16,7 @@ for folder_name in os.listdir(source_dir):
 
     # 确保是文件夹
     if os.path.isdir(folder_path):
-
         suv_file = os.path.join(folder_path, '112_ouhe_mask_median.nii.gz')
-
-
-
         #label
         if os.path.exists(suv_file):
             new_suv_name = f'MM_zheer_jz_{folder_name}.nii.gz'
